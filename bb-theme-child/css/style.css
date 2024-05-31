@@ -1,0 +1,337 @@
+/* Custom Animation */
+
+.horizontal-scroll {
+    overflow: hidden;
+}
+
+.fl-builder-edit .horizontal-scroll {
+    overflow: visible;
+}
+
+.horizontal-scroll .slideDown {
+    opacity: 0;
+    animation: redoslideDown .7s;
+    animation-timing-function: linear;
+}
+
+.inview .slideDown {
+    opacity: 1;
+    animation: slideDown .7s;
+    animation-timing-function: linear;
+}
+
+@keyframes slideDown {
+    from {
+        opacity: 0;
+        transform: translateY(-100%);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes redoslideDown {
+    from {
+        opacity: 1;
+        transform: translateY(0);
+    }
+    to {
+        opacity: 0;
+        transform: translateY(-100%);
+    }
+}
+
+.horizontal-scroll .slideLeft {
+    opacity: 0;
+    animation: redoslideLeft .7s;
+    animation-timing-function: linear;
+}
+
+.inview .slideLeft {
+    opacity: 1;
+    animation: slideLeft .7s;
+    animation-timing-function: linear;
+}
+
+@keyframes slideLeft {
+    from {
+        opacity: 0;
+        transform: translateX(-100%);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes redoslideLeft {
+    from {
+        opacity: 1;
+        transform: translateX(0);
+    }
+    to {
+        opacity: 0;
+        transform: translateX(-100%);
+    }
+}
+
+.horizontal-scroll .slideUp {
+    opacity: 0;
+    animation: redoslideUp .7s;
+    animation-timing-function: linear;
+}
+
+.inview .slideUp {
+    opacity: 1;
+    animation: slideUp .7s;
+    animation-timing-function: linear;
+}
+
+@keyframes slideUp {
+    from {
+        opacity: 0;
+        transform: translateY(100%);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes redoslideUp {
+    from {
+        opacity: 1;
+        transform: translateX(0);
+    }
+    to {
+        opacity: 0;
+        transform: translateY(100%);
+    }
+}
+
+.horizontal-scroll .slideRight {
+    opacity: 0;
+    animation: redoslideRight .7s;
+    animation-timing-function: linear;
+}
+
+.inview .slideRight {
+    opacity: 1;
+    animation: slideRight .8s;
+    animation-timing-function: linear;
+}
+
+.inview .slideRight {
+    opacity: 1;
+    animation: slideRight .8s;
+    animation-timing-function: linear;
+}
+
+@keyframes slideRight {
+    from {
+        opacity: 0;
+        transform: translateX(100%);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes redoslideRight {
+    from {
+        opacity: 1;
+        transform: translateX(0);
+    }
+    to {
+        opacity: 0;
+        transform: translateX(100%);
+    }
+}
+
+.horizontal-scroll .fadeZoom {
+    opacity: 0;
+    animation: redofadeZoom .7s;
+    animation-timing-function: linear;
+}
+
+.inview .fadeZoom {
+    opacity: 1;
+    animation: fadeZoom .7s;
+    animation-timing-function: linear;
+}
+
+.inview .fadeZoom {
+    opacity: 1;
+    animation: fadeZoom .7s;
+    animation-timing-function: linear;
+}
+
+@keyframes fadeZoom {
+    from {
+        opacity: 0;
+        transform: scale(0)
+    }
+    to {
+        opacity: 1;
+        transform: scale(1)
+    }
+}
+
+@keyframes redofadeZoom {
+    from {
+        opacity: 1;
+        transform: scale(1)
+    }
+    to {
+        opacity: 0;
+        transform: scale(0)
+    }
+}
+
+.delay-1s {
+    animation-delay: 1s;
+}
+
+/* Home About Us */
+
+.horizontal-scroll .fl-row-content-wrap {
+    position: relative;
+}
+
+.horizontal-scroll .fl-row-content {
+    position: relative;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+}
+
+.horizontal-scroll .text-content {
+
+}
+
+.horizontal-scroll .fl-module-photo {
+    transition: all ease-in-out .5s;
+}
+
+.horizontal-scroll .fl-module-photo.au_img1 {
+    top: 0;
+    left: 0;
+    position: absolute;
+    width: 25%;
+}
+
+.horizontal-scroll .fl-module-photo.au_img2 {
+    top: 0;
+    left: 80%;
+    width: 20%;
+    position: absolute;
+}
+
+.horizontal-scroll .fl-module-photo.au_img3 {
+    bottom: 0;
+    left: 0;
+    width: 25%;
+    position: absolute;
+    margin-left: -150px;
+}
+
+.horizontal-scroll .fl-module-photo.au_img4 {
+    bottom: 0;
+    left: 75%;
+    width: 25%;
+    position: absolute;
+}
+
+.fl-builder-edit .horizontal-scroll .fl-module-photo {
+    position: relative;
+}
+
+#about_us .au_img1.pos {
+    position: absolute;
+    top: 50%;
+    left: 65%;
+    width: 25%;
+    transform: translateY(-70%);
+    z-index: 2;
+}
+
+#about_us .au_img2.pos {
+    position: absolute;
+    top: 50%;
+    left: 80%;
+    width: 25%;
+    transform: translateY(-100%);
+    z-index: 1;
+}
+
+.horizontal-scroll .au_img3.pos {
+    bottom: 50%;
+    left: 100%;
+    width: 25%;
+    position: absolute;
+    transform: translateY(80%);
+    z-index: 3;
+}
+
+.horizontal-scroll .au_img4.pos {
+    bottom: 50%;
+    left: 75%;
+    width: 30%;
+    position: absolute;
+    transform: translateY(150%);
+    z-index: 4;
+}
+
+/* Section 2 */
+
+.horizontal-scroll .wa_img1 {
+    position: absolute;
+    left: 50%;
+    top: 20%;
+    width: 50%;
+}
+
+/* Section 3 */
+
+.horizontal-scroll .wg_img1 {
+    position: absolute;
+    left: 50%;
+    top: 20%;
+    width: 50%;
+}
+
+.to-show-text.limit {
+    height: 200px;
+	position: relative;
+	overflow: hidden;
+	-webkit-mask-image: -webkit-gradient(linear, left top, left bottom, from(black), to(transparent));
+	-webkit-mask-image: linear-gradient(to bottom, black 0%, transparent 100%);
+	mask-image: -webkit-gradient(linear, left top, left bottom, from(black), to(transparent));
+	mask-image: linear-gradient(to bottom, black 0%, transparent 100%);
+}
+
+.horizontal-scroll .container-text .fl-col-content {
+    transition: all ease-in-out .5s;
+    max-width: 800px;
+    position: relative;
+    left: 200px;
+}
+
+.horizontal-scroll.content-move .container-text .fl-col-content {
+    padding-left: 0;
+    left: 0;
+}
+
+.btn-to-animate {
+    cursor: pointer;
+}
+
+#menu-main-menu .menu > li > a{
+    color: #00fd;
+}
+.fl-node-5b486215863b2 .menu a {
+    color: rgba(206, 25, 25, 0.867) !important;
+    font-size: 20px;
+}
