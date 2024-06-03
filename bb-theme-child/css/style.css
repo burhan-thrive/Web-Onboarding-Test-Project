@@ -332,6 +332,9 @@
     color: #00fd;
 }
 .fl-node-5b486215863b2 .menu a {
-    color: rgba(206, 25, 25, 0.867) !important;
-    font-size: 20px;
+    color: #00fd !important;
+}
+#main-header .fl-icon-wrap .fl-icon-text a{
+    color: rgba(255, 174, 0, 0.867);
+    font-size: 16px;
 }
